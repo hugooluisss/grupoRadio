@@ -27,5 +27,13 @@
 				</object>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					$("#dvReproductor").removeClass("hidden-xs");
+					$(".visible-xs").addClass("hidden");
+				}
+			});
+		</script>
 	</body>
 </html>
